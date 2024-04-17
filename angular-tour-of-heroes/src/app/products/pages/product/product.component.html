@@ -1,0 +1,10 @@
+<p>Consulta la consola para ver los cambios en el ciclo de vida.</p>
+
+<products-price
+  *ngIf="isProductVisible"
+  [price]="currentPrice"
+></products-price>
+
+<button (click)="isProductVisible = !isProductVisible">Toggle</button>
+
+<button (click)="increasePrice()">Increase Price</button>
